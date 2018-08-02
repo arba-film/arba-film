@@ -11,6 +11,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        /** Create component */
+        $this->call(GroupLikeSeeder::class);
+        $this->call(GroupNotificationSeeder::class);
+        $this->call(GroupVideoSeeder::class);
+        $this->call(TypeCollectionSeeder::class);
+        $this->call(TypeNotificationSeeder::class);
     }
 }

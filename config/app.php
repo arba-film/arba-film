@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://arbafilm.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -154,11 +154,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        ArbaFilm\Providers\AppServiceProvider::class,
+        ArbaFilm\Providers\AuthServiceProvider::class,
+        // ArbaFilm\Providers\BroadcastServiceProvider::class,
+        ArbaFilm\Providers\EventServiceProvider::class,
+        ArbaFilm\Providers\RouteServiceProvider::class,
 
     ],
 
