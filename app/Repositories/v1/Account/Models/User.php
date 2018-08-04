@@ -9,19 +9,17 @@ use ArbaFilm\Repositories\v1\Notification\Models\Notification;
 use ArbaFilm\Repositories\v1\Subscription\Models\Subscriber;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Passport\HasApiTokens;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use HasApiTokens;
 
     protected $table = 'users';
     public $incrementing = false;
 
     protected $guarded = [''];
-
-    protected $fillable = [
-        'name', 'full_name', 'email', 'password', 'allow_admin_access'
-    ];
 
     protected $hidden = [
         'password', 'remember_token',

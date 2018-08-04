@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => ArbaFilm\User::class,
+        'model' => ArbaFilm\Repositories\v1\Account\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
