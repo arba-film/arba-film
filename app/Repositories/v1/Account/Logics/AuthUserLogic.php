@@ -81,20 +81,31 @@ class AuthUserLogic extends AuthUserUseCase
 
     public function handleLogout()
     {
-        $accessToke = Auth::guard('api')->user()->token();
+        $user = Auth::guard('api')->user();
 
-        if ($accessToke) {
+        if ($user) {
 
-            DB::table('oauth_refresh_tokens')->where('access_token_id', $accessToke->id)
-                ->update(['revoked' => Configs::$ACCESS_TOKEN_REVOKE['REVOKE']]);
+            $accessToke = $user->token();
 
-            $accessToke->revoke();
+            if ($accessToke) {
 
-            $response = array();
-            $response['isFailed'] = false;
-            $response['message'] = 'Logout successfully';
+                DB::table('oauth_refresh_tokens')->where('access_token_id', $accessToke->id)
+                    ->update(['revoked' => Configs::$ACCESS_TOKEN_REVOKE['REVOKE']]);
 
-            return response()->json($response, 200);
+                $accessToke->revoke();
+
+                $response = array();
+                $response['isFailed'] = false;
+                $response['message'] = 'Logout successfully';
+
+                return response()->json($response, 200);
+            } else {
+
+                $response['isFailed'] = true;
+                $response['message'] = 'Access token is failed';
+
+                return response()->json($response, 200);
+            }
         } else {
 
             $response['isFailed'] = true;
