@@ -12,6 +12,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         /** Create component */
+        $this->call(CountrySeeder::class);
         $this->call(GroupLikeSeeder::class);
         $this->call(GroupNotificationSeeder::class);
         $this->call(GroupVideoSeeder::class);

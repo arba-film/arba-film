@@ -42,7 +42,7 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
+            'driver' => 'passport',
             'provider' => 'users',
         ],
     ],
@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => ArbaFilm\User::class,
+            'model' => ArbaFilm\Repositories\v1\Account\Models\User::class,
         ],
 
         // 'users' => [

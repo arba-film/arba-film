@@ -1,0 +1,74 @@
+// bg
+$bg-dark-first : #1d2023;
+$bg-dark-second : #121315;
+$bg-dark-third : #141617;
+$bg-dark-fast : #17191b;
+$bg-dark-fifth : #161b20;
+$bg-dark-sixth : '';
+// text neon
+$white : #fff;
+$white-neon: #e7e7d0;
+$white-neon-2: #dbdfca;
+$white-neo-3: #fffef8;
+$white-neon-4: #dbdfca;
+$white-neon-5: #a1a1a1;
+$white-neon-8: #999b93;
+
+/*Background data content*/
+$bg-data-content: #22262a;
+
+/*card bg dark*/
+.card-bg-dark{
+  background-color: $bg-data-content;
+}
+
+/*Side-Bar*/
+.page-sidebar{
+  z-index: 1000;
+  background-color: $bg-dark-first !important;
+  border: unset;
+
+  .sidebar-menu{
+    .menu-open{
+      a{
+        color: $white-neon;
+      }
+    }
+    .menu-items{
+      li{
+        ul{
+          .sub-menu{
+            background-color: $bg-dark-fast;
+            li{
+              .icon-thumbnail{
+                background-color: unset;
+                color: $white-neon-8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+.icon-thumbnail{
+  background-color: unset;
+  background: unset;
+  color: $white-neon-8;
+}
+body{
+  color: #bbbcac;
+  background-color: #0d1013;
+}
+body.menu-behind .page-sidebar {
+  z-index: 1000;
+}
+
+.jumbotron{
+  background-color: #1a1c1e;
+}
+
+.page-sidebar .sidebar-header {
+  border-bottom: 2px solid #191d20;
+}

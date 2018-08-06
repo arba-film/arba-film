@@ -18,8 +18,13 @@ class Video extends Model
         return $this->belongsTo(Channel::class, 'channel_id');
     }
 
-    public function groupPlayVideo()
+    public function playlist()
     {
-        return $this->belongsTo(GroupPlayVideo::class, 'group_play_video_id');
+        return $this->belongsTo(Playlist::class, 'playlist_id');
+    }
+
+    public function groupVideo()
+    {
+        return $this->belongsTo(GroupVideo::class, 'group_video_id');
     }
 }
