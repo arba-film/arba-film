@@ -1,0 +1,614 @@
+{
+	"id": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+	"name": "ArbaFilm",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Account",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"order": [
+				"f4ddad6b-8cc7-3d8a-f856-541c5274669b",
+				"a4c800d8-b49d-002e-928b-6f0385720905",
+				"be52601e-0c54-9af8-9927-0078ed46ccbc",
+				"2966a668-a99c-6a1e-7261-e2e48ab7238b",
+				"56f8f1e3-b2f5-b19e-8f17-110f0a0f6503"
+			],
+			"owner": "2551408",
+			"folders_order": [],
+			"id": "e62c34b0-926f-8224-b45a-c42b2802656b"
+		},
+		{
+			"name": "Channel",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"order": [
+				"6961c6c1-bd5e-f59b-caf7-1c6ba77ca518",
+				"92c701a8-a28f-557e-5eb0-1a4b3aa6cf12",
+				"d28dc4d8-ac52-9690-0bd7-882af855a099",
+				"1685a569-a8f9-a532-9b3d-015cc5ba40ea",
+				"bd504d3e-b684-58dd-1a10-92b58c4bfbb8"
+			],
+			"owner": "2551408",
+			"folders_order": [],
+			"id": "12fafdda-ae71-bc22-f3bc-699ba7d89752"
+		}
+	],
+	"folders_order": [
+		"e62c34b0-926f-8224-b45a-c42b2802656b",
+		"12fafdda-ae71-bc22-f3bc-699ba7d89752"
+	],
+	"timestamp": 1533282639093,
+	"owner": "2551408",
+	"public": false,
+	"requests": [
+		{
+			"id": "1685a569-a8f9-a532-9b3d-015cc5ba40ea",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/channel/delete",
+			"folder": "12fafdda-ae71-bc22-f3bc-699ba7d89752",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "9abc63ab-0de1-3535-9500-acec38c27911",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533525140933,
+			"name": "deleteChannel",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"responses": []
+		},
+		{
+			"id": "2966a668-a99c-6a1e-7261-e2e48ab7238b",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/account/get_data_login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"data": null,
+			"dataMode": "params",
+			"name": "getDataLogin",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1533525235328,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "e62c34b0-926f-8224-b45a-c42b2802656b"
+		},
+		{
+			"id": "56f8f1e3-b2f5-b19e-8f17-110f0a0f6503",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM1OGQ2NWUyNjkzZWUxZDFmMGQyZmJjMzkxN2EyOTg5NzRmN2UyNTA1MjY0YjBlODk0MDJkMzkxZTQ1N2Q3Mzc4Zjc0ZmE3ZjhmYTk1OWNjIn0.eyJhdWQiOiIyIiwianRpIjoiMzU4ZDY1ZTI2OTNlZTFkMWYwZDJmYmMzOTE3YTI5ODk3NGY3ZTI1MDUyNjRiMGU4OTQwMmQzOTFlNDU3ZDczNzhmNzRmYTdmOGZhOTU5Y2MiLCJpYXQiOjE1MzMyOTAyMTEsIm5iZiI6MTUzMzI5MDIxMSwiZXhwIjoxNTY0ODI2MjExLCJzdWIiOiI5YjI5M2IyMi1jYzI2LTM2NzItODUyMS0wMzFjOGVmZTAzYzkiLCJzY29wZXMiOltdfQ.n6Y16n71oNT866cBAepvj0-QlyCE2Uz6r5PigqRLMisePgJXF7zq_V4Y5XhhLqwUjDbAZo9K7IAzw-g8tuQgQzyVFojDuIGtz1Er91I-wTAMAbziEq1qO39O_75xdOQGfKx4Kk5dURnS4ih2GgQuYP9E8mpXnBQlDJoLyFmUZ2Roukt-1dL5Ta5xlhYuSHdP-0EdiQjtZb5VsyXfRr4KjJQy9Kyysr0wC7fJ64_d4ks55t_8yST8wRnVytazekePIgAfH61ejxKNy8o6AFmp3qS0bx4SwNtUjxezULLPOUl7pLh9w2VSEtQOy-bWCkyqN5c8iHKu5gK5yUVSATMhnNnLQSs6UiVYhle3nKFfGhohASQZxs5M5cOpJOaEasoKOUmRB7bEmUB0FLxmzOLXGGlJ6iruijgtY9rcT6bJ5xankDBsslkwvz7nNmXywHYvRRqTwWV8X3Z-QxN0EEHSO5OFyM94DfdrML8pdp863u-0khHf7whqhTx_OU6UK7PkEpuAEu_6pfRKdKQeDCxl8oD25sZFQFC-TvyYrVAk9MSjb4qUF8Jyxa7TbbrQ2JRdALeJ8qQzC5rozo7-kN054zsVnvZKRE4SVhoaj7pFxFIGpuKVHOxjzpRJbbGgrp3P0DHmqBm-K6PE0Z3b-2Qj_IdPRFlguKJGgRuYvuZ1Uc4\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM1OGQ2NWUyNjkzZWUxZDFmMGQyZmJjMzkxN2EyOTg5NzRmN2UyNTA1MjY0YjBlODk0MDJkMzkxZTQ1N2Q3Mzc4Zjc0ZmE3ZjhmYTk1OWNjIn0.eyJhdWQiOiIyIiwianRpIjoiMzU4ZDY1ZTI2OTNlZTFkMWYwZDJmYmMzOTE3YTI5ODk3NGY3ZTI1MDUyNjRiMGU4OTQwMmQzOTFlNDU3ZDczNzhmNzRmYTdmOGZhOTU5Y2MiLCJpYXQiOjE1MzMyOTAyMTEsIm5iZiI6MTUzMzI5MDIxMSwiZXhwIjoxNTY0ODI2MjExLCJzdWIiOiI5YjI5M2IyMi1jYzI2LTM2NzItODUyMS0wMzFjOGVmZTAzYzkiLCJzY29wZXMiOltdfQ.n6Y16n71oNT866cBAepvj0-QlyCE2Uz6r5PigqRLMisePgJXF7zq_V4Y5XhhLqwUjDbAZo9K7IAzw-g8tuQgQzyVFojDuIGtz1Er91I-wTAMAbziEq1qO39O_75xdOQGfKx4Kk5dURnS4ih2GgQuYP9E8mpXnBQlDJoLyFmUZ2Roukt-1dL5Ta5xlhYuSHdP-0EdiQjtZb5VsyXfRr4KjJQy9Kyysr0wC7fJ64_d4ks55t_8yST8wRnVytazekePIgAfH61ejxKNy8o6AFmp3qS0bx4SwNtUjxezULLPOUl7pLh9w2VSEtQOy-bWCkyqN5c8iHKu5gK5yUVSATMhnNnLQSs6UiVYhle3nKFfGhohASQZxs5M5cOpJOaEasoKOUmRB7bEmUB0FLxmzOLXGGlJ6iruijgtY9rcT6bJ5xankDBsslkwvz7nNmXywHYvRRqTwWV8X3Z-QxN0EEHSO5OFyM94DfdrML8pdp863u-0khHf7whqhTx_OU6UK7PkEpuAEu_6pfRKdKQeDCxl8oD25sZFQFC-TvyYrVAk9MSjb4qUF8Jyxa7TbbrQ2JRdALeJ8qQzC5rozo7-kN054zsVnvZKRE4SVhoaj7pFxFIGpuKVHOxjzpRJbbGgrp3P0DHmqBm-K6PE0Z3b-2Qj_IdPRFlguKJGgRuYvuZ1Uc4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/account/success",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"data": null,
+			"dataMode": "params",
+			"name": "loginSuccess",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1533525273778,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "e62c34b0-926f-8224-b45a-c42b2802656b"
+		},
+		{
+			"id": "6961c6c1-bd5e-f59b-caf7-1c6ba77ca518",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/channel/add",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"data": [
+				{
+					"key": "channelName",
+					"value": "Naruto shippuden",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channelDescription",
+					"value": "Nonton bareng, naruto shippuden",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "countyId",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phoneNo",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "photoProfile",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "photoCover",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "addChannel",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1533521923296,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "12fafdda-ae71-bc22-f3bc-699ba7d89752"
+		},
+		{
+			"id": "92c701a8-a28f-557e-5eb0-1a4b3aa6cf12",
+			"headers": "//Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/channel/detail/a850665e-1dda-3618-80e2-b3f7fbfa8f15",
+			"folder": "12fafdda-ae71-bc22-f3bc-699ba7d89752",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "channelName",
+					"value": "Naruto shippuden",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channelDescription",
+					"value": "Nonton bareng, naruto shippuden",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "countyId",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phoneNo",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "photoProfile",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "photoCover",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533525152130,
+			"name": "detailChannel",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"responses": []
+		},
+		{
+			"id": "a4c800d8-b49d-002e-928b-6f0385720905",
+			"headers": "",
+			"headerData": [],
+			"url": "arbafilm.com/api/v1/account/login",
+			"folder": "e62c34b0-926f-8224-b45a-c42b2802656b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "yuswa98@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "yuswa12",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533525217834,
+			"name": "login",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"responses": []
+		},
+		{
+			"id": "bd504d3e-b684-58dd-1a10-92b58c4bfbb8",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4",
+					"description": ""
+				}
+			],
+			"url": "arbafilm.com/api/v1/channel/list",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"data": null,
+			"dataMode": "params",
+			"name": "listChannel",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1533521948624,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "12fafdda-ae71-bc22-f3bc-699ba7d89752"
+		},
+		{
+			"id": "be52601e-0c54-9af8-9927-0078ed46ccbc",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM2NzkzYmIwOWRhM2JhNjU0ZmJhMGY1OTg1ZjQwZmM1MGEwZDBhOWUxNmUzMjU4N2M1OTY0MDFiNjRkMDU5MzU5NjUwYjUzN2E3OWYwNGMzIn0.eyJhdWQiOiIyIiwianRpIjoiMzY3OTNiYjA5ZGEzYmE2NTRmYmEwZjU5ODVmNDBmYzUwYTBkMGE5ZTE2ZTMyNTg3YzU5NjQwMWI2NGQwNTkzNTk2NTBiNTM3YTc5ZjA0YzMiLCJpYXQiOjE1MzM1MjM0ODQsIm5iZiI6MTUzMzUyMzQ4NCwiZXhwIjoxNTY1MDU5NDg0LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.g_dBoS-3F_taTk5lCHDMIJvJjaZqjt6dPJSWlf2dbWrS0-oAL91Onv7Nx6lLEQzLPP2X1I_q-qF9--2npKmg_jauujeBF2378nJNCsiDqipvU7xS0M7msWjB2Q64hSQvc626ozhe2rbET-tAZzqiV0N7f0KhR3ixe98puH3c7vB-nwHOE50N32psXgv122TFpfmOKNT4upsMX1RMXNdrPm2mtD5M-Fr_SFlFaCFgnZpG7e0vTd907-DpQR1sJb8BEngoNdOKrTQlTN26SZpvFQDxPjQasqccomnhnNO__3a6fXkbxwpFsea5lEuBEQ4YW1Q9Wzt6KLEY6ReCKDCE1D9SffjSi4giL-mq8xwceGUOn24fpltpcqEuFDioz9SRliyzzufjAwThrJrWoJsX5uf2F0Wcz86nOagLy0fLSaUDdjaXZ6TDP-dvwsxW4sdsYXiCzm_0joEMgV0ydJkvwf5hhtCHLE0DVYQruBBEa3f3ahz4IL_SubZShtddKFfV025sj7DRqv6GeAuctJpR1XNF8QxLoV3z1BjE9Eo8LfyMRegrIcPHXN4MpMG11EnMZ_5G4vllpQRDaVlneXFdfSDdH-KWDtB6ecnbaHEpAubNPRcPnuC58opHtjoGNylSoEA7hf__MBaPc5b3APa_MUX0J9Xai4UH5XsTLIOIugA\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjM2NzkzYmIwOWRhM2JhNjU0ZmJhMGY1OTg1ZjQwZmM1MGEwZDBhOWUxNmUzMjU4N2M1OTY0MDFiNjRkMDU5MzU5NjUwYjUzN2E3OWYwNGMzIn0.eyJhdWQiOiIyIiwianRpIjoiMzY3OTNiYjA5ZGEzYmE2NTRmYmEwZjU5ODVmNDBmYzUwYTBkMGE5ZTE2ZTMyNTg3YzU5NjQwMWI2NGQwNTkzNTk2NTBiNTM3YTc5ZjA0YzMiLCJpYXQiOjE1MzM1MjM0ODQsIm5iZiI6MTUzMzUyMzQ4NCwiZXhwIjoxNTY1MDU5NDg0LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.g_dBoS-3F_taTk5lCHDMIJvJjaZqjt6dPJSWlf2dbWrS0-oAL91Onv7Nx6lLEQzLPP2X1I_q-qF9--2npKmg_jauujeBF2378nJNCsiDqipvU7xS0M7msWjB2Q64hSQvc626ozhe2rbET-tAZzqiV0N7f0KhR3ixe98puH3c7vB-nwHOE50N32psXgv122TFpfmOKNT4upsMX1RMXNdrPm2mtD5M-Fr_SFlFaCFgnZpG7e0vTd907-DpQR1sJb8BEngoNdOKrTQlTN26SZpvFQDxPjQasqccomnhnNO__3a6fXkbxwpFsea5lEuBEQ4YW1Q9Wzt6KLEY6ReCKDCE1D9SffjSi4giL-mq8xwceGUOn24fpltpcqEuFDioz9SRliyzzufjAwThrJrWoJsX5uf2F0Wcz86nOagLy0fLSaUDdjaXZ6TDP-dvwsxW4sdsYXiCzm_0joEMgV0ydJkvwf5hhtCHLE0DVYQruBBEa3f3ahz4IL_SubZShtddKFfV025sj7DRqv6GeAuctJpR1XNF8QxLoV3z1BjE9Eo8LfyMRegrIcPHXN4MpMG11EnMZ_5G4vllpQRDaVlneXFdfSDdH-KWDtB6ecnbaHEpAubNPRcPnuC58opHtjoGNylSoEA7hf__MBaPc5b3APa_MUX0J9Xai4UH5XsTLIOIugA",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/account/logout",
+			"folder": "e62c34b0-926f-8224-b45a-c42b2802656b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533525264170,
+			"name": "logout",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"responses": []
+		},
+		{
+			"id": "d28dc4d8-ac52-9690-0bd7-882af855a099",
+			"headers": "Accept: application/json\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdhYzRmOTcyODU0YTU1YmIxYmI0YzIyZDg2OTQyNThjZTUzOTlkNWQzYjFlMzNlZjM5Yzc4NDIyYmY1YzRmZjExZmExYmQ4YzUzMGU0MWYyIn0.eyJhdWQiOiIyIiwianRpIjoiN2FjNGY5NzI4NTRhNTViYjFiYjRjMjJkODY5NDI1OGNlNTM5OWQ1ZDNiMWUzM2VmMzljNzg0MjJiZjVjNGZmMTFmYTFiZDhjNTMwZTQxZjIiLCJpYXQiOjE1MzM1MTg2ODcsIm5iZiI6MTUzMzUxODY4NywiZXhwIjoxNTY1MDU0Njg3LCJzdWIiOiI2MjhkZTJmNy02MDcyLTM3NzctYjM1Yy1lNjEwNmU4MTI1YjUiLCJzY29wZXMiOltdfQ.CVoqw0QALN4Q_Uw1N1dvK8DvyPt5Xs9tSsLkKZg9ZCCHMWAqQ-nYiohxK8TzWvj6SDrUB9xzHqjjT2vFjkzyxnQo6iph8ntzs3JWnyqK4xdM2zwTKlhENWUIv748cmblj28qS_GxznD8PcgWRdyE5GfFYTK4Rw4Wwjl6hEEOqYIwIxq_KYhck8yHffgtpA-tEvyCi64DcyIGL7sZyBhIrfaiNZJXqSsywRaeAVIDcoOFbmcAqH1OLp0hdk7ML2F8caHGh-HQTP6dC-g0g6HO0YGyG5RL2n5AlSFkSdXLKEAoHJWb-3d1RFhnXIyr6r9K0gbbvjcrmdU_ug9xOZh41VpXHpvP6Y5Q_RrhiEHGtlYf_xRx927oeYmH7Q7zFpANxysRYWqlOi1k4JKS0dzNxVBMYEqqJpvMU0GMiNhob-tBK-7g59KzxFuzFguMPpvtY0izeJday20WJ-MZPNkTJsEj7CoGZ6EP-esM4lUOiebiag24HmPIIBcsF-xjpLcsw0qONiDbGAPndvDKOZeQfTPm1f6Xfux0l371OOvZwOjWL6X19vwxi52GdUiBysvDcdlDFKkyFsK4QeIHIlMd_52KBcqBi1GTGJsvU-16sKPixWQssGABMBFMfRXEIZc8eeLNLTzsRoMdd4G_5vows2lmrnNt3VA1m-grZ8pWnC4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "arbafilm.com/api/v1/channel/update",
+			"folder": "12fafdda-ae71-bc22-f3bc-699ba7d89752",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "id",
+					"value": "988e0a56-d1bd-3972-87b7-bc2c4c85222f",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channelName",
+					"value": "Naruto shippudensadasd",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "channelDescription",
+					"value": "Nonton bareng, naruto shippudenfadaf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "test",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "countryId",
+					"value": "5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "test",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phoneNo",
+					"value": "081234132",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "photoProfile",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "photoCover",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533525146883,
+			"name": "updateChannel",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"responses": []
+		},
+		{
+			"id": "f4ddad6b-8cc7-3d8a-f856-541c5274669b",
+			"headers": "",
+			"headerData": [],
+			"url": "arbafilm.com/api/v1/account/registration",
+			"folder": "e62c34b0-926f-8224-b45a-c42b2802656b",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "yuswa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fullName",
+					"value": "yuswa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "yuswa98@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "yuswa123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533287263294,
+			"name": "registration",
+			"description": "",
+			"collectionId": "e0fb2ad2-544f-d074-5f5e-c04708f66999",
+			"responses": []
+		}
+	]
+}
