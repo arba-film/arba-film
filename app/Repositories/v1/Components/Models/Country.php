@@ -4,7 +4,7 @@ namespace ArbaFilm\Repositories\v1\Components\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GroupCountry extends Model
+class Country extends Model
 {
-    protected $table = 'group_countries';
+    protected $table = 'countries';
 }

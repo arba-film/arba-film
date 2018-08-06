@@ -3,11 +3,14 @@
 namespace ArbaFilm\Http\Controllers\API\v1\Account;
 
 use ArbaFilm\Repositories\v1\Account\Logics\AuthUserLogic;
+use ArbaFilm\Repositories\v1\GlobalConfig\CheckLoginTraits\Account;
 use Illuminate\Http\Request;
 use ArbaFilm\Http\Controllers\Controller;
 
 class LoginController extends Controller
 {
+    use Account;
+
     public function login(Request $request)
     {
         return AuthUserLogic::login($request);
@@ -15,11 +18,16 @@ class LoginController extends Controller
 
     public function success()
     {
-        return AuthUserLogic::success();
+        return $this->checkLogin(request(), 'success');
+    }
+
+    public function getDataLogin()
+    {
+        return $this->checkLogin(request(), 'getDataLogin');
     }
 
     public function logout()
     {
-        return AuthUserLogic::logout();
+        return $this->checkLogin(request(), 'logout');
     }
 }
