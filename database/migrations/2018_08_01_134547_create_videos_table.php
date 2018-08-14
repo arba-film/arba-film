@@ -16,13 +16,13 @@ class CreateVideosTable extends Migration
         Schema::create('videos', function (Blueprint $table) {
             $table->uuid('id');
             $table->char('channel_id', 36);
-            $table->char('group_video_id', 30);
-            $table->tinyInteger('group_play_video_id');
+            $table->char('group_video_id', 30)->nullable();
+            $table->bigInteger('playlist_id')->nullable();
             $table->string('file', 150);
             $table->string('title', 100);
-            $table->text('description');
-            $table->bigInteger('count_watching');
-            $table->string('photo_cover', 150);
+            $table->text('description')->nullable();
+            $table->bigInteger('count_watching')->default(0);
+            $table->string('photo_cover', 150)->nullable();
             $table->char('date_upload', 20);
             $table->char('time_upload', 10);
             $table->timestamps();

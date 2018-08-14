@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGroupCountriesTable extends Migration
+class CreatePlaylistsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateGroupCountriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('group_countries', function (Blueprint $table) {
+        Schema::create('playlists', function (Blueprint $table) {
             $table->increments('id');
+            $table->char('channel_id', 36)->nullable();
+            $table->string('name', 100);
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateGroupCountriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('group_countries');
+        Schema::dropIfExists('playlists');
     }
 }

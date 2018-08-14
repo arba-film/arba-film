@@ -14,18 +14,32 @@ abstract class AuthUserUseCase
 
     abstract public function handleLogin($request);
 
-    public static function success()
+    public static function success($user)
     {
-        return (new static)->handleSuccess();
+        return (new static)->handleSuccess($user);
     }
 
-    abstract public function handleSuccess();
+    abstract public function handleSuccess($user);
 
-    public static function logout()
+    public static function getDataLogin($user)
     {
-        return (new static)->handleLogout();
+        return (new static)->handleGetDataLogin($user);
     }
 
-    abstract public function handleLogout();
+    abstract public function handleGetDataLogin($user);
+
+    public static function logout($user)
+    {
+        return (new static)->handleLogout($user);
+    }
+
+    abstract public function handleLogout($user);
+
+    public static function updateAccount(Request $request, $user)
+    {
+        return (new static)->handleUpdateAccount($request, $user);
+    }
+
+    abstract public function handleUpdateAccount($request, $user);
 
 }
