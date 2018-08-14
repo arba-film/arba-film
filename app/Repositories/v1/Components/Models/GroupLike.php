@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class GroupLike extends Model
 {
     protected $table = 'group_likes';
+    protected $guarded = [''];
 }

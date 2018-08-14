@@ -55,7 +55,7 @@ class AuthUserLogic extends AuthUserUseCase
         } else {
 
             $response['isFailed'] = true;
-            $response['message'] = 'Your account not found';
+            $response['message'] = 'Email or account not found';
 
             return response()->json($response, 200);
         }
@@ -112,6 +112,31 @@ class AuthUserLogic extends AuthUserUseCase
 
             $response['isFailed'] = true;
             $response['message'] = 'Access token is failed';
+
+            return response()->json($response, 200);
+        }
+    }
+
+    public function handleUpdateAccount($request, $user)
+    {
+        $userAccount = User::find($user->id)
+            ->update([
+                'name' => $request->name,
+                'full_name' => $request->fullName,
+                'email' => $request->email,
+                'password' => bcrypt($request->password)
+            ]);
+
+        if ($userAccount) {
+
+            $response['isFailed'] = false;
+            $response['message'] = 'Update account successfully';
+
+            return response()->json($response, 200);
+        } else {
+
+            $response['isFailed'] = true;
+            $response['message'] = 'Update account failed';
 
             return response()->json($response, 200);
         }

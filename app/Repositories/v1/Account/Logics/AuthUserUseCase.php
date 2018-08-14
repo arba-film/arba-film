@@ -35,4 +35,11 @@ abstract class AuthUserUseCase
 
     abstract public function handleLogout($user);
 
+    public static function updateAccount(Request $request, $user)
+    {
+        return (new static)->handleUpdateAccount($request, $user);
+    }
+
+    abstract public function handleUpdateAccount($request, $user);
+
 }

@@ -54,7 +54,7 @@ class ChannelLogic extends ChannelUseCase
             if (!$moveProfileImage) {
 
                 $response['isFailed'] = true;
-                $response['message'] = 'Failed to save profile image';
+                $response['message'] = 'Failed to save cover image';
 
                 return response()->json($response, 200);
             }
@@ -190,7 +190,7 @@ class ChannelLogic extends ChannelUseCase
                 } else {
 
                     $response['isFailed'] = true;
-                    $response['message'] = 'Failed to update photo profile';
+                    $response['message'] = 'Failed to update photo cover';
 
                     return response()->json($response, 200);
                 }
