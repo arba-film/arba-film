@@ -17,4 +17,9 @@ trait GlobalUtils
         return str_random(36) . str_shuffle(str_replace(' ', '', $text)) . '.' . $file->extension();
     }
 
+    public function getVideoName($file, $text)
+    {
+        return str_random(30) . str_shuffle(str_replace(' ', '', $text)) . '.' . $file->extension();
+    }
+
 }

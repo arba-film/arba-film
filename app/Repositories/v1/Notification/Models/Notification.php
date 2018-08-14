@@ -5,7 +5,7 @@ namespace ArbaFilm\Repositories\v1\Notification\Models;
 use ArbaFilm\Repositories\v1\Account\Models\User;
 use ArbaFilm\Repositories\v1\Channel\Models\Channel;
 use ArbaFilm\Repositories\v1\Components\Models\GroupNotification;
-use ArbaFilm\Repositories\v1\Subscription\Models\Subscriber;
+use ArbaFilm\Repositories\v1\Subscription\Models\Subscription;
 use Illuminate\Database\Eloquent\Model;
 
 class Notification extends Model
@@ -28,9 +28,9 @@ class Notification extends Model
         return $this->belongsTo(Channel::class, 'channel_id');
     }
 
-    public function subscribe()
+    public function subscription()
     {
-        return $this->belongsTo(Subscriber::class, 'subscribe_id');
+        return $this->belongsTo(Subscription::class, 'subscription_id');
     }
 
     public function groupNotification()

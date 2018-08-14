@@ -3,6 +3,7 @@
 namespace ArbaFilm\Repositories\v1\GlobalConfig;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 trait IssueToken
@@ -21,9 +22,35 @@ trait IssueToken
 
         $request->request->add($params);
 
-        $proxy = Request::create('oauth/token','POST');
+        $proxy = Request::create('oauth/token', 'POST');
 
         return Route::dispatch($proxy);
 
     }
+
+    public function checkLogin()
+    {
+        $user = Auth::guard('api')->user();
+
+        if ($user) {
+
+            $response = [
+                'isLogin' => true,
+                'message' => 'You has been logged in',
+                'user' => $user
+            ];
+
+            return $response;
+        } else {
+
+            $response = [
+                'isLogin' => false,
+                'message' => 'You are not logged in',
+                'result' => array()
+            ];
+
+            return $response;
+        }
+    }
+
 }

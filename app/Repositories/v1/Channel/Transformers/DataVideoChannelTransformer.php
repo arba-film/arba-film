@@ -2,6 +2,7 @@
 
 namespace ArbaFilm\Repositories\v1\Channel\Transformers;
 
+use ArbaFilm\Repositories\v1\Components\Models\GroupVideo;
 use ArbaFilm\Repositories\v1\Video\Models\Video;
 use League\Fractal\TransformerAbstract;
 
@@ -19,10 +20,7 @@ class DataVideoChannelTransformer extends TransformerAbstract
             'channelId' => $video->channel_id,
             'title' => $video->title,
             'description' => $video->description,
-            'groupVideo' => [
-                'id' => $video->group_video_id,
-                'name' => !is_null($video->groupVideo) ? $video->groupVideo->name : ''
-            ],
+            'groupVideo' => $this->handleGroupVideo($video->group_video_id),
             'playlist' => [
                 'id' => $video->playlist_id,
                 'name' => !is_null($video->playlist) ? $video->playlist->name : ''
@@ -31,5 +29,25 @@ class DataVideoChannelTransformer extends TransformerAbstract
             'data' => $video->date_upload,
             'time' => $video->time_upload
         ];
+    }
+
+    private function handleGroupVideo($groupVideoId)
+    {
+        $groupVideoArray = explode("/", $groupVideoId);
+
+        $result = array();
+
+        foreach ($groupVideoArray as $group) {
+            $data = GroupVideo::find($group);
+
+            if ($data) {
+                $result[] = [
+                    'id' => $data->id,
+                    'name' => $data->name
+                ];
+            }
+        }
+
+        return $result;
     }
 }

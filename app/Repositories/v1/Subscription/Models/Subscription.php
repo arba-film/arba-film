@@ -7,9 +7,9 @@ use ArbaFilm\Repositories\v1\Channel\Models\Channel;
 use ArbaFilm\Repositories\v1\Components\Models\TypeNotification;
 use Illuminate\Database\Eloquent\Model;
 
-class Subscriber extends Model
+class Subscription extends Model
 {
-    protected $table = 'subscribers';
+    protected $table = 'subscriptions';
     protected $guarded = [''];
 
     public $incrementing = false;

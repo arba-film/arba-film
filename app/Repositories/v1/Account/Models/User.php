@@ -6,7 +6,7 @@ use ArbaFilm\Repositories\v1\Channel\Models\Channel;
 use ArbaFilm\Repositories\v1\Comment\Models\Comment;
 use ArbaFilm\Repositories\v1\Like\Models\Like;
 use ArbaFilm\Repositories\v1\Notification\Models\Notification;
-use ArbaFilm\Repositories\v1\Subscription\Models\Subscriber;
+use ArbaFilm\Repositories\v1\Subscription\Models\Subscription;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Passport\HasApiTokens;
@@ -30,9 +30,9 @@ class User extends Authenticatable
         return $this->hasMany(Channel::class, 'user_id');
     }
 
-    public function subscribe()
+    public function subscription()
     {
-        return $this->hasMany(Subscriber::class, 'user_id');
+        return $this->hasMany(Subscription::class, 'user_id');
     }
 
     public function notification()
