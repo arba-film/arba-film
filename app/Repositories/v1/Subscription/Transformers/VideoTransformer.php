@@ -2,11 +2,14 @@
 
 namespace ArbaFilm\Repositories\v1\Subscription\Transformers;
 
+use ArbaFilm\Repositories\v1\GlobalConfig\TimeDifference;
 use ArbaFilm\Repositories\v1\Video\Models\Video;
 use League\Fractal\TransformerAbstract;
 
 class VideoTransformer extends TransformerAbstract
 {
+    use TimeDifference;
+
     /**
      * A Fractal transformer.
      *
@@ -16,11 +19,11 @@ class VideoTransformer extends TransformerAbstract
     {
         return [
             'id' => $video->id,
+            'channelName' => !is_null($video->channel) ? $video->channel->channel_name : null,
             'title' => $video->title,
             'photoCover' => $video->photo_cover,
-            'countView' => $video->count_view,
-            'dateUpload' => $video->date_upload,
-            'timeUpload' => $video->time_upload,
+            'countWatching' => $video->count_watching,
+            'difference' => $this->difference($video->date_upload, $video->time_upload)
         ];
     }
 

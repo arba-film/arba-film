@@ -14,7 +14,7 @@ class TypeNotificationSeeder extends Seeder
     {
         $data = array(
             ['name' => 'Always'],
-            ['name' => 'Sometimes'],
+//            ['name' => 'Sometimes'],
             ['name' => 'Non active'],
         );
 

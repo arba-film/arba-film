@@ -58,7 +58,10 @@ class SubscriptionLogic extends SubscriptionUseCase
 
     private function handleDataVideo($channelId)
     {
-        $video = Video::where('channel_id', $channelId)->paginate(20);
+        $video = Video::where('channel_id', $channelId)
+            ->orderBy('date_upload', 'DESC')
+            ->orderBy('time_upload', 'DESC')
+            ->paginate(20);
 
         if ($video) {
             $result = fractal($video, new VideoTransformer());

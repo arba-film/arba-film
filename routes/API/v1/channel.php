@@ -35,4 +35,13 @@ Route::group(['prefix' => 'v1/channel', 'namespace' => 'API\v1\Channel'], functi
 
     });
 
+
+    /** Route for class SwitchController */
+    Route::group(['prefix' => 'switch'], function () {
+
+        Route::get('list', 'SwitchController@listChannel');
+        Route::post('process/{id}', 'SwitchController@processSwitch');
+
+    });
+
 });

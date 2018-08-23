@@ -20,12 +20,9 @@ class ListDataChannelTransformer extends TransformerAbstract
             'channel' => [
                 'id' => $channel->id,
                 'name' => $channel->channel_name,
-                'description' => $channel->channel_description
             ],
             'countryName' => !is_null($channel->country) ? $channel->country->name : '',
-            'phoneNo' => $channel->phone_no,
-            'photoProfile' => $channel->photo_profile,
-            'statusActive' => $channel->status_active
+            'photoProfile' => $channel->photo_profile
         ];
     }
 }

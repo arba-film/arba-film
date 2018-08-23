@@ -1,12 +1,13 @@
 <?php
 
-namespace ArbaFilm\Repositories\v1\Channel\Transformers;
+namespace ArbaFilm\Repositories\v1\Video\Transformers;
 
 use ArbaFilm\Repositories\v1\Components\Models\GroupVideo;
+use ArbaFilm\Repositories\v1\GlobalConfig\Configs;
 use ArbaFilm\Repositories\v1\Video\Models\Video;
 use League\Fractal\TransformerAbstract;
 
-class DataVideoChannelTransformer extends TransformerAbstract
+class DetailVideoTransformer extends TransformerAbstract
 {
     /**
      * A Fractal transformer.
@@ -17,15 +18,19 @@ class DataVideoChannelTransformer extends TransformerAbstract
     {
         return [
             'id' => $video->id,
-            'channelId' => $video->channel_id,
-            'title' => $video->title,
-            'description' => $video->description,
+            'channel' => [
+                'id' => $video->channel_id,
+                'name' => !is_null($video->channel) ? $video->channel->channel_name : null
+            ],
             'groupVideo' => $this->handleGroupVideo($video->group_video_id),
             'playlist' => [
                 'id' => $video->playlist_id,
-                'name' => !is_null($video->playlist) ? $video->playlist->name : ''
+                'name' => !is_null($video->playlist) ? $video->playlist->name : null
             ],
-            'photoCover' => $video->photo_cover,
+            'file' => Configs::$VIDEO_PATH['VIDEO'] . $video->file,
+            'title' => $video->title,
+            'description' => $video->description,
+            'photoCover' => $this->handlePhotoCover($video),
             'data' => $video->date_upload,
             'time' => $video->time_upload
         ];
@@ -50,4 +55,16 @@ class DataVideoChannelTransformer extends TransformerAbstract
 
         return $result;
     }
+
+    private function handlePhotoCover($video)
+    {
+        $coverPath = Configs::$IMAGE_PATH['COVER_VIDEO'] . $video->photo_cover;
+
+        if (file_exists($coverPath)) {
+            return $coverPath;
+        } else {
+            return null;
+        }
+    }
+
 }

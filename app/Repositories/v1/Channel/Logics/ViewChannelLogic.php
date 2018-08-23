@@ -4,7 +4,6 @@ namespace ArbaFilm\Repositories\v1\Channel\Logics;
 
 use ArbaFilm\Repositories\v1\Channel\Models\Channel;
 use ArbaFilm\Repositories\v1\Channel\Transformers\DataPlaylistChannelTransformer;
-use ArbaFilm\Repositories\v1\Channel\Transformers\DataVideoChannelTransformer;
 use ArbaFilm\Repositories\v1\Channel\Transformers\DetailDataChannelTransformer;
 use ArbaFilm\Repositories\v1\Channel\Transformers\SubscriptionTransformer;
 use ArbaFilm\Repositories\v1\GlobalConfig\Configs;
@@ -12,6 +11,7 @@ use ArbaFilm\Repositories\v1\GlobalConfig\GlobalUtils;
 use ArbaFilm\Repositories\v1\Subscription\Models\Subscription;
 use ArbaFilm\Repositories\v1\Video\Models\Playlist;
 use ArbaFilm\Repositories\v1\Video\Models\Video;
+use ArbaFilm\Repositories\v1\Video\Transformers\VideoTransformer;
 
 class ViewChannelLogic extends ViewChannelUseCase
 {
@@ -37,7 +37,7 @@ class ViewChannelLogic extends ViewChannelUseCase
             $response['message'] = 'Success get data';
             $response['result'] = [
                 'channel' => fractal($channel, new DetailDataChannelTransformer()),
-                'video' => fractal($video, new DataVideoChannelTransformer()),
+                'video' => fractal($video, new VideoTransformer()),
                 'subscription' => fractal($subscription, new SubscriptionTransformer()),
                 'countSubscriber' => Subscription::where('channel_id', $channel->id)
                     ->where('is_subscribe', Configs::$IS_SUBSCRIBE['TRUE'])
@@ -68,7 +68,7 @@ class ViewChannelLogic extends ViewChannelUseCase
 
                 $response['isFailed'] = false;
                 $response['message'] = 'Success get data video';
-                $response['result'] = fractal($video, new DataVideoChannelTransformer());
+                $response['result'] = fractal($video, new VideoTransformer());
 
                 return response()->json($response, 200);
             } else {

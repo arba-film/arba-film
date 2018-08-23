@@ -20,7 +20,7 @@ class SubscriptionTransformer extends TransformerAbstract
                 'id' => $subscription->channel_id,
                 'name' => !is_null($subscription->channel) ? $subscription->channel->channel_name : null,
                 'photoProfile' => !is_null($subscription->channel) ? $subscription->channel->photo_profile : null,
-                'status_active' => !is_null($subscription->channel) ? $subscription->channel->status_active : null
+                'statusActive' => !is_null($subscription->channel) ? $subscription->channel->status_active : null
             ]
         ];
     }

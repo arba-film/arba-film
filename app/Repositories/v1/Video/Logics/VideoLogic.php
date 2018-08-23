@@ -5,7 +5,10 @@ namespace ArbaFilm\Repositories\v1\Video\Logics;
 use ArbaFilm\Repositories\v1\Channel\Models\Channel;
 use ArbaFilm\Repositories\v1\GlobalConfig\Configs;
 use ArbaFilm\Repositories\v1\GlobalConfig\GlobalUtils;
+use ArbaFilm\Repositories\v1\Notification\Traits\ProcessNotification;
+use ArbaFilm\Repositories\v1\Subscription\Models\Subscription;
 use ArbaFilm\Repositories\v1\Video\Models\Video;
+use ArbaFilm\Repositories\v1\Video\Transformers\DetailVideoTransformer;
 use ArbaFilm\Repositories\v1\Video\Transformers\VideoTransformer;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Validator;
@@ -13,6 +16,7 @@ use Illuminate\Support\Facades\Validator;
 class VideoLogic extends VideoUseCase
 {
     use GlobalUtils;
+    use ProcessNotification;
 
     public function handleAddVideo($request, $user)
     {
@@ -89,9 +93,20 @@ class VideoLogic extends VideoUseCase
 
             if ($video) {
 
+                $channel->update(['count_upload' => ($channel->count_upload + 1)]);
+
+                $dataNotification = [
+                    'channelId' => $channel->id,
+                    'groupNotification' => Configs::$GROUP_NOTIFICATION['NEW_VIDEO'],
+                    'title' => 'New video',
+                    'message' => '<b>' . $channel->channel_name . '</b> added a new video. Hurry watch the video'
+                ];
+
+                $this->handleNotification($dataNotification);
+
                 $response['isFailed'] = false;
                 $response['message'] = 'Success upload video';
-                $response['result'] = fractal($video, new VideoTransformer());
+                $response['result'] = fractal($video, new DetailVideoTransformer());
 
                 return response()->json($response, 200);
             } else {
@@ -152,7 +167,7 @@ class VideoLogic extends VideoUseCase
 
             $response['isFailed'] = false;
             $response['message'] = 'Get video successfully';
-            $response['result'] = fractal($video, new VideoTransformer());
+            $response['result'] = fractal($video, new DetailVideoTransformer());
 
             return response()->json($response, 200);
         } else {
@@ -202,7 +217,7 @@ class VideoLogic extends VideoUseCase
 
             $response['isFailed'] = false;
             $response['message'] = 'Success update data';
-            $response['result'] = fractal($video, new VideoTransformer());
+            $response['result'] = fractal($video, new DetailVideoTransformer());
 
             return response()->json($response, 200);
         } else {

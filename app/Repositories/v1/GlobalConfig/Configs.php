@@ -49,8 +49,8 @@ class Configs
 
     public static $TYPE_NOTIFICATION = [
         'ALWAYS' => 1,
-        'SOMETIMES' => 2,
-        'NOT_ACTIVE' => 3
+        'NOT_ACTIVE' => 2,
+        'SOMETIMES' => 3
     ];
 
 

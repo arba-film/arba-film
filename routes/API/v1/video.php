@@ -22,4 +22,13 @@ Route::group(['prefix' => 'v1/video', 'namespace' => 'API\v1\Video'], function (
 
     });
 
+    /** Route for class VisitorController */
+    Route::group(['prefix' => 'visitor'], function () {
+
+        Route::get('dashboard', 'VisitorController@listDashboard');
+        Route::get('popular', 'VisitorController@listPopular');
+        Route::get('subscription', 'VisitorController@listSubscription');
+
+    });
+
 });

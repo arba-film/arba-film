@@ -25,6 +25,7 @@ class CreateChannelsTable extends Migration
             $table->string('photo_profile', 150);
             $table->string('photo_cover', 150);
             $table->tinyInteger('status_active')->default(0);
+            $table->bigInteger('count_upload')->nullable();
             $table->timestamps();
 
             $table->primary('id');

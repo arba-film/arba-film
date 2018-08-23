@@ -2,7 +2,10 @@
 
 namespace ArbaFilm\Repositories\v1\GlobalConfig;
 
+use ArbaFilm\Repositories\v1\Account\Models\DataLoginAccount;
+use ArbaFilm\Repositories\v1\Account\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +26,8 @@ trait IssueToken
         $request->request->add($params);
 
         $proxy = Request::create('oauth/token', 'POST');
+
+        $this->historyLogin($request->email);
 
         return Route::dispatch($proxy);
 
@@ -53,4 +58,17 @@ trait IssueToken
         }
     }
 
+    private function historyLogin($email)
+    {
+        $userId = User::where('email', $email)->first()->id;
+
+        if ($userId) {
+            DataLoginAccount::create([
+                'user_id' => $userId,
+                'user_ip' => request()->ip(),
+                'date' => Carbon::now()->format('d/m/Y'),
+                'time' => Carbon::now()->format('H:i')
+            ]);
+        }
+    }
 }

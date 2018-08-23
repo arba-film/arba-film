@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateNotificationsTable extends Migration
+class CreateDataLoginAccountsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,10 @@ class CreateNotificationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('notifications', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::create('data_login_accounts', function (Blueprint $table) {
+            $table->bigIncrements('id');
             $table->char('user_id', 36);
-            $table->char('friend_id', 36)->nullable();
-            $table->char('channel_id', 36)->nullable();
-            $table->tinyInteger('group_notification_id');
-            $table->string('title', 100);
-            $table->text('message');
-            $table->string('url', 100)->nullable();
+            $table->char('user_ip', 15);
             $table->char('date', 20);
             $table->char('time', 10);
             $table->timestamps();
@@ -35,6 +30,6 @@ class CreateNotificationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('notifications');
+        Schema::dropIfExists('data_login_accounts');
     }
 }

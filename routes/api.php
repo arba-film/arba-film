@@ -25,6 +25,7 @@ require(base_path($API . 'account.php'));
 require(base_path($API . 'channel.php'));
 require(base_path($API . 'comment.php'));
 require(base_path($API . 'component.php'));
+require(base_path($API . 'history.php'));
 require(base_path($API . 'like.php'));
 require(base_path($API . 'notification.php'));
 require(base_path($API . 'subscription.php'));

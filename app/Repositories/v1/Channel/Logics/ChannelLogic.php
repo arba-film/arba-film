@@ -4,7 +4,6 @@ namespace ArbaFilm\Repositories\v1\Channel\Logics;
 
 use ArbaFilm\Repositories\v1\Account\Transformers\DataChannelTransformer;
 use ArbaFilm\Repositories\v1\Channel\Models\Channel;
-use ArbaFilm\Repositories\v1\Channel\Transformers\DataVideoChannelTransformer;
 use ArbaFilm\Repositories\v1\Channel\Transformers\DetailDataChannelTransformer;
 use ArbaFilm\Repositories\v1\Channel\Transformers\ListDataChannelTransformer;
 use ArbaFilm\Repositories\v1\GlobalConfig\Configs;
@@ -36,7 +35,7 @@ class ChannelLogic extends ChannelUseCase
 
         $checkChannel = $this->handleCheckChannel($user);
 
-        if ($checkChannel > 0) {
+        if ($checkChannel == 0) {
             $request->request->add(['statusActive' => Configs::$ACCESS_STATUS['ACTIVE']]);
         }
 
@@ -142,21 +141,9 @@ class ChannelLogic extends ChannelUseCase
 
         if ($channel) {
 
-            $video = Video::where('channel_id', $channel->id)->get();
-
-            $resultVideo = array();
-
-            if ($video) {
-
-                $resultVideo = fractal($video, new DataVideoChannelTransformer());
-            }
-
             $response['isFailed'] = false;
             $response['message'] = 'Success get data';
-            $response['result'] = [
-                'channel' => fractal($channel, new DetailDataChannelTransformer()),
-                'video' => $resultVideo
-            ];
+            $response['result'] = fractal($channel, new DetailDataChannelTransformer());
 
             return response()->json($response, 200);
         } else {
@@ -183,7 +170,7 @@ class ChannelLogic extends ChannelUseCase
                 $destinationProfilePath = Configs::$IMAGE_PATH['PROFILE_CHANNEL'];
                 $moveProfileImage = $request->photoProfile->move($destinationProfilePath, $newProfileName);
 
-                if (!$moveProfileImage) {
+                if ($moveProfileImage) {
 
                     File::delete(app_path($channel->photo_profile));
                     Channel::find($request->id)->update(['photo_profile' => $newProfileName]);
@@ -204,7 +191,7 @@ class ChannelLogic extends ChannelUseCase
                 $destinationCoverPath = Configs::$IMAGE_PATH['COVER_CHANNEL'];
                 $moveCoverImage = $request->photoCover->move($destinationCoverPath, $newCoverName);
 
-                if (!$moveCoverImage) {
+                if ($moveCoverImage) {
 
                     File::delete(app_path($channel->photo_cover));
                     Channel::find($request->id)->update(['photo_cover' => $newCoverName]);
@@ -252,9 +239,11 @@ class ChannelLogic extends ChannelUseCase
 
     public function handleDeleteChannel($request)
     {
-        $channel = Channel::find($request->id)->delete();
+        $channel = Channel::find($request->id);
 
         if ($channel) {
+
+            $channel->delete();
 
             $response['isFailed'] = false;
             $response['message'] = 'Delete channel success';
@@ -263,9 +252,10 @@ class ChannelLogic extends ChannelUseCase
         } else {
 
             $response['isFailed'] = true;
-            $response['message'] = 'Delete channel failed';
+            $response['message'] = 'Channel does not exist';
 
             return response()->json($response, 200);
         }
     }
+
 }

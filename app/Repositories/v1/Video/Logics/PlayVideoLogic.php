@@ -4,13 +4,17 @@ namespace ArbaFilm\Repositories\v1\Video\Logics;
 
 use ArbaFilm\Repositories\v1\Comment\Models\Comment;
 use ArbaFilm\Repositories\v1\GlobalConfig\GlobalUtils;
+use ArbaFilm\Repositories\v1\GlobalConfig\IssueToken;
+use ArbaFilm\Repositories\v1\History\Models\HistorySpectacle;
 use ArbaFilm\Repositories\v1\Video\Models\Video;
 use ArbaFilm\Repositories\v1\Video\Transformers\CommentTransformer;
 use ArbaFilm\Repositories\v1\Video\Transformers\PlayVideoTransformer;
 use ArbaFilm\Repositories\v1\Video\Transformers\VideoTransformer;
+use Illuminate\Support\Carbon;
 
 class PlayVideoLogic extends PlayVideoUseCase
 {
+    use IssueToken;
     use GlobalUtils;
 
     public function handlePlayVideo($request)
@@ -20,6 +24,18 @@ class PlayVideoLogic extends PlayVideoUseCase
         if ($video) {
 
             $video->update(['count_watching' => ($video->count_watching + 1)]);
+
+            $checkLogin = $this->checkLogin();
+
+            if ($checkLogin['isLogin']) {
+
+                $user = $checkLogin['user'];
+
+                HistorySpectacle::updateOrCreate(
+                    ['user_id' => $user->id, 'video_id' => $video->id,],
+                    ['dateTime' => Carbon::now()->format('d/m/Y H:i')]
+                );
+            }
 
             $response['isFailed'] = false;
             $response['message'] = 'Success get video';

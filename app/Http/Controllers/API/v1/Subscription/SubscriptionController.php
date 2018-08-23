@@ -4,6 +4,9 @@ namespace ArbaFilm\Http\Controllers\API\v1\Subscription;
 
 use ArbaFilm\Repositories\v1\GlobalConfig\IssueToken;
 use ArbaFilm\Repositories\v1\Subscription\Logics\SubscriptionLogic;
+use ArbaFilm\Repositories\v1\Subscription\Models\Subscription;
+use ArbaFilm\Repositories\v1\Subscription\Transformers\VideoTransformer;
+use ArbaFilm\Repositories\v1\Video\Models\Video;
 use Illuminate\Http\Request;
 use ArbaFilm\Http\Controllers\Controller;
 
@@ -15,7 +18,7 @@ class SubscriptionController extends Controller
     {
         $checkLogin = $this->checkLogin();
 
-        if (!$checkLogin['isLogin']){
+        if (!$checkLogin['isLogin']) {
             return response()->json($checkLogin);
         }
 
@@ -26,7 +29,7 @@ class SubscriptionController extends Controller
     {
         $checkLogin = $this->checkLogin();
 
-        if (!$checkLogin['isLogin']){
+        if (!$checkLogin['isLogin']) {
             return response()->json($checkLogin);
         }
 
@@ -37,7 +40,7 @@ class SubscriptionController extends Controller
     {
         $checkLogin = $this->checkLogin();
 
-        if (!$checkLogin['isLogin']){
+        if (!$checkLogin['isLogin']) {
             return response()->json($checkLogin);
         }
 
